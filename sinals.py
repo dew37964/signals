@@ -20,9 +20,13 @@ signals = [".",
            "-"]
 good_signals = []
 for item in signals:
-    print(item)
-    good = input ( "Is this a good signal? Y/N")  
-    if good == "Y":
+    if len(item)>2:
         good_signal.append(item)
-print(good_signals)
-
+#   print(item)
+#   good = input ( "Is this a good signal? Y/N")  
+#   if good == "Y":
+#       good_signal.append(item)
+    else:
+        bad_signals.append(item)
+print("These are the goodsignals: ", good_signal)
+print("These are the bad signals: ", bad_signals)
